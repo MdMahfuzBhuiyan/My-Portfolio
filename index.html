@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Md. Mahfuz Bhuiyan</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+	<style>
+		/*======================================
+		//--//--> Home Section with Rounded Image
+		======================================*/
+		.hero {
+		  display: flex;
+		  align-items: center;
+		  justify-content: center;
+		  height: 100vh;
+		  background-color: #333;
+		  color: white;
+		  position: relative;
+		}
+  
+		.hero .text {
+		  text-align: center;
+		  position: relative;
+		  z-index: 1;
+		}
+  
+		.hero img {
+		  width: 250px; /* Adjust width */
+		  height: 250px; /* Adjust height */
+		  border-radius: 50%; /* Rounded image */
+		  object-fit: cover;
+		  border: 5px solid #fff; /* White border around the image */
+		  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4); /* Soft shadow for depth */
+		  transition: transform 0.3s ease, box-shadow 0.3s ease;
+		}
+  
+		.hero img:hover {
+		  transform: scale(1.1);
+		  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5); /* Hover effect to scale up and change shadow */
+		}
+  
+		#typing-animation {
+		  font-size: 24px;
+		  font-weight: bold;
+		  color: rgb(255, 255, 255);
+		  overflow: hidden;
+		  white-space: nowrap;
+		  animation: typing 3s steps(20, end) infinite;
+		  margin-top: 15px;
+		}
+  
+		@keyframes typing {
+		  from {
+			width: 0;
+		  }
+		  to {
+			width: 100%;
+		  }
+		}
+  
+		/* Navigation Bar */
+		.navbar {
+		  background-color: #222;
+		}
+		.navbar .navbar-brand {
+		  color: white;
+		}
+		.navbar .nav-item a {
+		  color: white;
+		  padding: 10px 15px;
+		}
+		.navbar .nav-item a:hover {
+		  background-color: #ff6347;
+		  color: white;
+		}
+	  </style>
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Md. Mahfuz Bhuiyan</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Education</span></a></li>
+			  <li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#certificate-section" class="nav-link"><span>Certificates</span></a></li>
+			  <li class="nav-item"><a href="#photography-section" class="nav-link"><span>Photography</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+			 
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/about2.jpg);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Md. Mahfuz Bhuiyan</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Welcome  ',
+						'To  ',
+						'My Portfolio!   ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 120); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <!-- <h2>A Senior Data Analyst</h2> -->
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <!-- <p><a href="https://www.youtube.com/@RishabhMishraOfficial" class="btn btn-primary py-3 px-4">YouTube</a>  -->
+							<!-- <a href="https://github.com/rishabhnmishra" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p> -->
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+	<style>
+		.skill-mf .title-s {
+			font-size: 2rem;
+			font-weight: bold;
+			text-transform: uppercase;
+			margin-bottom: 2rem;
+			color: #fffdfd;
+		}
+	
+		.progress {
+			height: 15px;
+			border-radius: 20px;
+			background: #e0e0e0;
+			margin-bottom: 20px;
+			overflow: hidden;
+		}
+	
+		.progress-bar {
+			border-radius: 10px;
+			transition: width 1.5s ease-in-out;
+			background: linear-gradient(90deg, hwb(46 0% 0%), #ffbb00);
+		}
+	</style>
+	
+	<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+		<div class="container">
+			<div class="row d-flex align-items-stretch">
+				<!-- About Me Section (Left Side) -->
+				<div class="col-md-7">
+					<div class="heading-section ftco-animate">
+						<h2 class="big mb-2">About Me</h2>
+						<p>Hi, I'm Md. Mahfuz Bhuiyan, a Computer Science and Engineering (CSE) student at the University of Asia Pacific. Over the past two years, I have been actively engaged in programming, primarily working on problem-solving using C++. While I don’t have any specific hobbies, I occasionally enjoy watching tech reviews, movies, and series. Additionally, I enjoy exploring new places through travel.</p>
+	
+						<ul class="about-info mt-3 px-md-0 px-2 text-left mx-auto" style="max-width: 600px;">
+							<li class="d-flex justify-content-between"><span>Birthdate:</span> <span>25/5/2001</span></li>
+							<!-- <li class="d-flex justify-content-between"><span>Email:</span> <span>22201013@uap-bd.edu</span></li> -->
+							<li class="d-flex justify-content-between"><span>Education:</span> <span>Bachelor of Engineering</span></li>
+							<li class="d-flex justify-content-between"><span>Language:</span> <span>Bangla, English, Arabic</span></li>
+							<li class="d-flex justify-content-between"><span>Soft Skills:</span> <span>MS World, Excel, Powerpoint</span></li>
+							<li class="d-flex justify-content-between"><span>Future Goal:</span> <span>Software Engineer</span></li>
+						</ul>
+					</div>
+				</div>
+	
+			<!-- Skills Section (Bottom Right) -->
+<!-- Skills Section -->
+<!-- Skills Section (Dark Theme) -->
+<!-- Skills Section (Dark Theme with White Text & Yellow C++) -->
+<div class="col-md-5">
+    <div class="card bg-dark text-white shadow-lg border-0 p-4">
+        <h5 class="text-center font-weight-bold text-white mb-4">Skills</h5>
+
+        <div class="mb-3">
+            <div class="d-flex justify-content-between">
+                <span class="font-weight-bold text-white"><i class="fas fa-code"></i> C</span>
+                <span class="font-weight-bold text-white">95%</span>
+            </div>
+            <div class="progress rounded-pill" style="height: 10px; background-color: rgba(255,255,255,0.2);">
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <div class="d-flex justify-content-between">
+                <span class="font-weight-bold text-white"><i class="fas fa-laptop-code"></i> C++</span>
+                <span class="font-weight-bold text-white">95%</span>
+            </div>
+            <div class="progress rounded-pill" style="height: 10px; background-color: rgba(255,255,255,0.2);">
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 95%; background-color: #FFD700;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <div class="d-flex justify-content-between">
+                <span class="font-weight-bold text-white"><i class="fab fa-java"></i> Java</span>
+                <span class="font-weight-bold text-white">80%</span>
+            </div>
+            <div class="progress rounded-pill" style="height: 10px; background-color: rgba(255,255,255,0.2);">
+                <div class="progress-bar bg-danger" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <div class="d-flex justify-content-between">
+                <span class="font-weight-bold text-white"><i class="fas fa-database"></i> MySQL</span>
+                <span class="font-weight-bold text-white">70%</span>
+            </div>
+            <div class="progress rounded-pill" style="height: 10px; background-color: rgba(255,255,255,0.2);">
+                <div class="progress-bar bg-info" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <div class="d-flex justify-content-between">
+                <span class="font-weight-bold text-white"><i class="fab fa-python"></i> Python</span>
+                <span class="font-weight-bold text-white">50%</span>
+            </div>
+            <div class="progress rounded-pill" style="height: 10px; background-color: rgba(255,255,255,0.2);">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+    </div>
+</div>
+
+
+
+    </div>
+</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+					
+
+						<!-- <div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="30">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>
+								<p><a href="https://www.linkedin.com/in/rishabhnmishra/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> -->
+    </section> 
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-4">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<!-- <h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2> -->
+            <!-- <p>Seasoned Senior Data Analyst with 5+ years of experience driving business strategies through data-driven insights. Proven expertise in data science, statistical analysis, machine learning algorithms and project management.</p> -->
+          </div>
+        </div>
+
+		<!-- <div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br> -->
+		
+		<!-- <div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2021-Present</span>
+						<h2>Senior Data Analyst</h2>
+						<span class="position">Merkle</span>
+						<p class="mt-4">Merkle, a leading CXM and media company with over 10K+ professionals globally. It's a part of Dentsu International. 
+							<ul>
+								<li>Analysed ad campaigns, clickstream, and customer surveys data, identified an increasing demand and launched a strategic product line.</li>
+								<li>Developed time series forecasting models to predict sales and optimize marketing budgets, got model performance of 92%.</li>
+								<li>Designed and executed A/B tests, performed rigorous statistical analysis. Led to 20% MoM increase in the conversion rate.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2018-2021</span>
+						<h2>Senior Data Analyst</h2>
+						<span class="position">iQuanti</span>
+						<p class="mt-4">iQuanti is a data-driven digital marketing analytics and solutions company, helps top 100 global brands. 
+							<ul>
+								<li>Performed in-depth market research and analysis to create online pages. Resulted in ~100% website growth and 30% increase in conversion rate YoY.</li>
+								<li>Delivered multiple training and mentorship sessions on analytical tools like SQL, MS Excel, Power BI, Tableau and Python.</li>
+								<li>Performed migration and enhancements for merchandising dashboard, involved data integration and its feature improvement.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+			</div> -->
+
+		<!-- <br>
+		<br> -->
+
+
+
+
+
+                                <!--                     EDUCATION                 -->
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2023-2025 (Ongoing)</span>
+    					<h2>Bachelor of Engineering</h2>
+    					<span class="position">University of Asia Pacific</span>
+    					<!-- <p class="mt-4">Grade: First class distinction.</p> -->
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2021-2022</span>
+    					<h2>Higher Secondary School</h2>
+    					<span class="position">Dhaka City College </span>
+    					<!-- <p class="mt-4">Grade: A+ </p> -->
+    				</div>
+				</div>
+
+				<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2019-2020</span>
+    					<h2>Secondary School</h2>
+    					<span class="position">Tanjimul Ummah Alim Madrasah</span>
+    					<!-- <p class="mt-4">Grade: A+ </p> -->
+    				</div>
+				</div>
+    		</div>
+
+    		<!-- <div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="#" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    			</div>
+    		</div>
+    	</div>
+    </section> -->
+
+
+
+	                              <!--                PROJECTS                  -->
+
+	<section class="ftco-section" id="projects-section">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-5">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Projects</h1>
+					<h2 class="mb-4">My Projects</h2>
+				</div>
+			</div>
+			<div class="row">
+				<!-- Project 1 -->
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="project-item">
+						<a href="https://github.com/MdMahfuzBhuiyan/JavaQuizProject.git" class="block-20 zoom-effect" style="background-image: url('images/quiz.jpg');"></a>
+						<div class="text mt-3">
+							<h3 class="heading"><a href="https://github.com/MdMahfuzBhuiyan/JavaQuizProject.git">Quiz App JAVA</a></h3>
+							<p>A Quiz App in Java allows users to answer questions, track scores, and view results. It features a user-friendly interface using Swing, with options for timers and categories.</p>
+						</div>
+					</div>
+				</div>
+				<!-- Project 2 -->
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="project-item">
+						<a href="https://drive.google.com/file/d/1lbjkvrYBBs0ekHDEI8Bb_vGt01_SN1ux/view?usp=sharing" class="block-20 zoom-effect" style="background-image: url('images/library.jpg');"></a>
+						<div class="text mt-3">
+							<h3 class="heading"><a href="https://drive.google.com/file/d/1lbjkvrYBBs0ekHDEI8Bb_vGt01_SN1ux/view?usp=sharing">library Database Management System</a></h3>
+							<p>A Library Management System was developed using MySQL to efficiently handle book records, user management, borrowing, and return transaction.</p>
+						</div>
+					</div>
+				</div>
+
+	</section>
+	
+
+                       <!--                   CERTIFICATES                      -->
+
+		<section class="ftco-section" id="certificate-section">
+			<div class="container">
+				<div class="row justify-content-center mb-5 pb-5">
+					<div class="col-md-7 heading-section text-center ftco-animate">
+						<h1 class="big big-2">Certificates</h1>
+						<h2 class="mb-4">Certificates:</h2>
+					</div>
+				</div>
+				<div class="row d-flex">
+					<div class="col-md-4 d-flex ftco-animate">
+						<div class="blog-entry justify-content-end">
+							<a href="https://drive.google.com/file/d/12bLUn13U7G6zQck-zkUJ2aCJe6iPCim3/view?usp=sharing" 
+								class="block-20 zoom-effect" 
+								style="background-image: url('images/Top10.jpg');">
+							</a>
+							<div class="text mt-3 float-right d-block">
+								<h3 class="heading">
+									<a href="https://drive.google.com/file/d/12bLUn13U7G6zQck-zkUJ2aCJe6iPCim3/view?usp=sharing">
+										UAP Inter University Collaborative Programming Contest 1.0
+									</a>
+								</h3>
+								<p>Our team, UAP_CodeEnchanters, secured a <b>top 20 position</b> in the UAP Inter University Collaborative Programming Contest 1.0 (Junior Segment) held on January 27, 2024, organized by the University of Asia Pacific.</p>
+							</div>
+						</div>
+					</div>
+		
+					<div class="col-md-4 d-flex ftco-animate">
+						<div class="blog-entry justify-content-end">
+							<a href="https://drive.google.com/file/d/1Dt4fOttObjnvEamyCfljkpv0ePzQnhN4/view?usp=sharing" 
+								class="block-20 zoom-effect" 
+								style="background-image: url('images/icpc.jpg');">
+							</a>
+							<div class="text mt-3 float-right d-block">
+								<h3 class="heading">
+									<a href="https://drive.google.com/file/d/1Dt4fOttObjnvEamyCfljkpv0ePzQnhN4/view?usp=sharing">
+										ICPC Asia Dhaka Regional Site Preliminary Contest
+									</a>
+								</h3>
+								<p>Our team, UAP_CodeEnchanters, received an <b>Honorable Mention</b> in the ICPC Preliminary Contest held on October 13, 2023.</p>
+							</div>
+						</div>
+					</div>
+		
+					<div class="col-md-4 d-flex ftco-animate">
+						<div class="blog-entry">
+							<a href="https://drive.google.com/file/d/1QUNT-rPd-1h_qjvpTbREfD2_nYsBJJae/view?usp=sharing" 
+								class="block-20 zoom-effect" 
+								style="background-image: url('images/Champion.jpg');">
+							</a>
+							<div class="text mt-3 float-right d-block">
+								<h3 class="heading">
+									<a href="https://drive.google.com/file/d/1QUNT-rPd-1h_qjvpTbREfD2_nYsBJJae/view?usp=sharing">
+										The View Finder - Season 06
+									</a>
+								</h3>
+								<p><b>Champion</b> in Mobiography Category at The View Finder - Season 06, Organized by Film and Photography Club, CSE.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section> 
+		
+		
+	<br>
+		<!-- added justify-content-center to center align the last two projects -->
+		<div class="row d-flex justify-content-center">  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://drive.google.com/file/d/1FAgWdTuOdhh8BSKGdnHbL9cYtb3HNzMo/view?usp=sharing" class="block-20 zoom-effect" style="background-image: url('images/law.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://drive.google.com/file/d/1FAgWdTuOdhh8BSKGdnHbL9cYtb3HNzMo/view?usp=sharing">Luminous 1.0 Inter-Department Photography Exhibition</a></h3>
+				  <p>Secured <b>Top 3 </b> in Luminous 1.0 Inter-Department Photography ExhibitionOrganized by Law Photography Club on November 26.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://drive.google.com/file/d/1hOLJYUpb8O3WHkTXJRGXhk3G2VWMzQMI/view?usp=sharing" class="block-20 zoom-effect" style="background-image: url('images/math.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://drive.google.com/file/d/1hOLJYUpb8O3WHkTXJRGXhk3G2VWMzQMI/view?usp=sharing">JRC Intra University Math Olympiad</a></h3>
+				  <p><b>Participated </b> in the JRC Memorial Math Fest 2023's Inter-University Math Olympiad, organized by the Math Club, University of Asia Pacific, on March 28, 2023.</p>
+				</div>
+			  </div>
+			</div>
+		 </div>
+	  </div>
+    </section>
+	<!-- PHOTOGRAPHY SECTION -->
+	<section class="ftco-section" id="photography-section">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-5">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Photography</h1>
+					<h2 class="mb-4">My Photography Works</h2>
+				</div>
+			</div>
+			<div class="row">
+				<!-- Photo 1 to 20 -->
+				<style>
+					.gallery-item {
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						overflow: hidden;
+						padding: 5px;
+					}
+					.gallery-item img {
+						width: 100%;
+						max-height: 300px;
+						object-fit: contain;
+						border-radius: 5px;
+					}
+				</style>
+				
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="gallery-item">
+						<img src="images/18a.jpg" alt="Photo 1" class="img-fluid">
+					</div>
+				</div>
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="gallery-item">
+						<img src="images/19a.jpg" alt="Photo 2" class="img-fluid">
+					</div>
+				</div>
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="gallery-item">
+						<img src="images/4a.jpg" alt="Photo 3" class="img-fluid">
+					</div>
+				</div>
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="gallery-item">
+						<img src="images/6a.jpeg" alt="Photo 4" class="img-fluid">
+					</div>
+				</div>
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="gallery-item">
+						<img src="images/16a.jpeg" alt="Photo 5" class="img-fluid">
+					</div>
+				</div>
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="gallery-item">
+						<img src="images/8a.jpg" alt="Photo 6" class="img-fluid">
+					</div>
+				</div>
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="gallery-item">
+						<img src="images/10a.jpg" alt="Photo 7" class="img-fluid">
+					</div>
+				</div>
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="gallery-item">
+						<img src="images/17a.jpeg" alt="Photo 8" class="img-fluid">
+					</div>
+				</div>
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="gallery-item">
+						<img src="images/13a.jpeg" alt="Photo 9" class="img-fluid">
+					</div>
+				
+	</section>
+	
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="container">
+		<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="5">0</strong>
+                <span>Achievements</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="2">0</strong>
+                <span>Projects</span>
+              </div>
+            </div>
+          </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<!-- <div class="container"> -->
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>My Friend's <span> Portfolio </span> </h2>
+						<p><a href="https://julias16.github.io/Julias-Uddin-Khan/" class="btn btn-primary py-3 px-5">Julias Uddin Khan</a></p>
+						<p><a href="https://yeamin-bhuiyan.github.io/extra/" class="btn btn-primary py-3 px-5">Yeamin Bhuiyan</a></p>
+						<p><a href="https://fireballzzz.github.io/portfolio/" class="btn btn-primary py-3 px-5">Forhad Siddique Rajon</a></p>
+						</div>
+						</div>
+					</div>
+				</div>
+				
+			<!-- </div> -->
+		</div>
+	</section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p><a> Dhaka, Bangladesh</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a>+880 1822 866632</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a>22201013@uap-bd.edu</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">My Github</h3>
+	            <p><a href="https://github.com/MdMahfuzBhuiyan">Github link</a></p>
+	          </div>
+        
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="" target="_blank">Md. Mahfuz Bhuiyan</a>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
